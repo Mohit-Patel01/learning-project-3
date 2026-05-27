@@ -98,7 +98,7 @@ function animate() {
     high_score.innerText = `high score: ${hscr}`;
     score.innerText = `score: ${scr}`;
     snakeLength++;
-    speed += 0.1;
+    speed += 0.05;
     gen();
    }
     ctx.drawImage(img, x1, y1, 50, 50);
