@@ -12,8 +12,6 @@ let k = "";
 let h ="";
 let x1;
 let y1;
-let x0= x-100;
-let y0= y-20;
 let k1;
 let h1;
 let scr = 0;
