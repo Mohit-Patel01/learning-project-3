@@ -78,17 +78,8 @@ function animate() {
     ctx.arc(head.x + 16, head.y + 11, 4, 0, Math.PI * 2);
     ctx.fillStyle = "black";
     ctx.fill();
-   if(x+ radius > canvas.width){
+   if(x+ radius > canvas.width || head.x - radius < 0|| head.y + radius > canvas.height|| head.y-radius < 0 ){
    new_game();
-   }
-   else if(head.x - radius < 0){
-    new_game();
-   }
-   else if(head.y + radius > canvas.height){
-    new_game();
-   }
-   else if(head.y-radius < 0){
-    new_game();
    }
    if(head.x+radius > x1 && head.x-radius < x1 +50 && head.y-radius< y1 +50 && head.y + radius > y1){
     scr++;
